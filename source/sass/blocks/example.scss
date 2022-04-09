@@ -1,0 +1,22 @@
+.example__wrapper {
+  background-color: $background-second;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: inherit;
+}
+
+.example__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-main;
+}
+
+.example__result {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

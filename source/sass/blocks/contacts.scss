@@ -1,0 +1,17 @@
+.contacts {
+  background-color: $background-white;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text-main;
+}

@@ -1,0 +1,45 @@
+.program__instruction {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.program__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-text-main;
+  text-transform: uppercase;
+}
+
+.program__control {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::-webkit-input-placeholder {
+    color: $color-text-main;
+  }
+
+  &::-moz-placeholder {
+    color: $color-text-main;
+    opacity: 100%;
+  }
+
+}
+
+.program__text {
+  color: $color-text-title;
+}
+
+.program__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.program__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 16px;
+}
