@@ -1,0 +1,15 @@
+.product-content__link-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-text-title;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-content__description {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text-main;
+}

@@ -1,0 +1,16 @@
+.main-intro {
+  background-color: $background-image;
+}
+
+.main-intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-text-white;
+}
+
+.main-intro__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-text-white;
+  text-transform: uppercase;
+}

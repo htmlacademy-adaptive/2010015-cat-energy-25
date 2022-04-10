@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -23,13 +24,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -41,7 +42,7 @@
     <h1 class="page-title">Подбор программы</h1>
 
     <form class="program" action="https://echo.htmlacademy.ru/" method="post">
-      <h2 class="program__title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <h2 class="program__instruction">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <fieldset class="program__fieldset">
         <legend class="visually-hidden">Параметры питомца.</legend>
         <ul class="program__list">
@@ -69,26 +70,26 @@
           <li class="program__item">
             <label class="program__label">
               <input class="program__control" type="radio" name="program-group" value="slim" checked>
-              <span class="program__text">Похудение</span>
+              <span class="program__option">Похудение</span>
             </label>
           </li>
           <li class="program__item">
             <label class="program__label">
               <input class="program__control" type="radio" name="program-group" value="weight">
-              <span class="program__text">Набор массы</span>
+              <span class="program__option">Набор массы</span>
             </label>
           </li>
           <li class="program__item">
             <label class="program__label">
               <input class="program__control" type="radio" name="program-group" value="your-advice">
-              <span class="program__text">Не знаю (нужен ваш совет)</span>
+              <span class="program__option">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
       </fieldset>
 
       <fieldset class="program__fieldset">
-        <legend class="visually-hidden">Контактные данные (владельца кота)</legend>
+        <legend class="program__title">Контактные данные (владельца кота)</legend>
         <ul class="program__list">
           <li class="program__item">
             <label class="program__label">E-mail:*
@@ -105,7 +106,7 @@
 
       <fieldset class="program__fieldset">
         <legend class="program__title">Комментарий</legend>
-        <textarea class="program__control" name="comment" cols="30" rows="10"></textarea>
+        <textarea class="program__control" name="comment" cols="37" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
       <fieldset class="program__fieldset">
@@ -138,7 +139,9 @@
         </ul>
       </fieldset>
 
-      <button class="program__button" type="submit">Отправить заявку</button>
+      <div class="program__button user-button">
+        <a class="user-button__form" type="submit">Отправить заявку</a>
+      </div>
       <p class="program__description">* — Обязательные поля</p>
     </form>
 
