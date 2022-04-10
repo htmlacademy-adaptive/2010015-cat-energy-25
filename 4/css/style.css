@@ -6,7 +6,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Oswald-medium";
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: "Arial";
-  src: url("../fonts/Arialregular.woff2") format("woff2"), url("../fonts/Arialregular.woff") format("woff");
+  src: local("Arial"), url(/fonts/Arial.ttf) url("../fonts/Arialregular.woff2") format("woff2"), url("../fonts/Arialregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -35,14 +35,16 @@
 }
 
 .page__body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
   background-color: #ffffff;
 }
 
 .site-list__link {
-  font-family: "Oswald-medium", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,7 +67,7 @@
   text-transform: uppercase;
 }
 
-.user-button__form {
+.main-button__form {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -81,6 +83,7 @@
 .pets-problems__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: inherit;
   text-transform: uppercase;
 }
 
@@ -208,6 +211,15 @@
   color: #444444;
 }
 
+.user-button__form {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .show-more__title {
   font-size: 16px;
   line-height: 20px;
@@ -279,21 +291,23 @@
 }
 
 .program__control {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
-.program__control::-webkit-input-placeholder {
-  color: #444444;
-}
-.program__control::-moz-placeholder {
+
+::placeholder {
   color: #444444;
   opacity: 100%;
 }
 
-.program__text {
+.program__option {
   color: #222222;
+}
+
+.program__text {
+  color: #000000;
 }
 
 .program__title {
