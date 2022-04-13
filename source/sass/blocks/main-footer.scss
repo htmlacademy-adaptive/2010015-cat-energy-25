@@ -1,3 +1,13 @@
 .main-footer__wrapper {
   background-color: $background-first;
 }
+
+.main-footer__social {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

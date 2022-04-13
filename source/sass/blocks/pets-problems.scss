@@ -1,3 +1,14 @@
+.pets-problems__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .pets-problems__item {
   background-color: $background-first;
 }

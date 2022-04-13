@@ -1,16 +1,45 @@
 .main-intro {
   background-color: $background-image;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    background-color: $background-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    background-color: $background-white;
+  }
 }
 
 .main-intro__title {
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   color: $color-text-white;
+
+  @media (min-width: $tablet-width) {
+    color: $color-text-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-text-black;
+  }
 }
 
 .main-intro__slogan {
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
   color: $color-text-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $color-text-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-text-black;
+  }
 }
