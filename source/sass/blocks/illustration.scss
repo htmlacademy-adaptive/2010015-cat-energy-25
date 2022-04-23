@@ -1,14 +1,17 @@
 .illustration__wrapper {
-  display: grid;
-  grid-template-columns: 124px 124px;
-
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: block;
   }
+}
+
+.illustration__counter-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .illustration__title {

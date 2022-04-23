@@ -1,16 +1,22 @@
 .main-header {
-  display: flex;
-  flex-direction: column;
+  background-color: $background-white;
+}
+
+.main-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 10px 20px 24px;
+  background-color: $background-white;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 720px 720px;
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
   }
 }

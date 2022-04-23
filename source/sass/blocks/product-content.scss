@@ -7,9 +7,20 @@
   text-transform: uppercase;
 }
 
+.product-content__wrapper {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  gap: 5px;
+}
+
 .product-content__description {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: $color-text-main;
+}
+
+.product-content__description:nth-child(even) {
+  text-align: right;
 }
