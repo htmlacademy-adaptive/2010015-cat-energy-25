@@ -11,50 +11,53 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="logo">
-      <a class="logo__image" href="#">
-        <img src="img/icons/logo-cat-energy-mobile.svg" width="34" height="38" alt="Cat energy иконка.">
-      </a>
-      <a class="logo__text logo-main" href="#">
-        <img src="img/icons/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
-      </a>
-      <div class="toggle-button">
-        <button class="toggle-button__toggle-open toggle-button__toggle-close" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
+    <div class="main-header__wrapper">
+      <div class="logo">
+        <a class="logo__image" href="#">
+          <img src="img/icons/logo-cat-energy-mobile.svg" width="34" height="38" alt="Cat energy иконка.">
+        </a>
+        <a class="logo__text logo-main" href="#">
+          <img src="img/icons/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
+        </a>
+        <div class="toggle-button">
+          <button class="toggle-button__toggle-open toggle-button__toggle-close" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+        </div>
       </div>
+
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="main-intro">
-      <p class="main-intro__title">Функциональное питание для котов</p>
-      <p class="main-intro__slogan">Занялся собой? Займись котом!</p>
-      <img class="main-intro__image" src="img/intro/intro-mobile.jpg" width="280" height="270" alt="Бокс cat energy.">
-      <div class="main-button">
-        <a class="main-button__form" href="form.html">Подобрать программу</a>
-      </div>
-    </div>
-
   </header>
 
   <main class="main-container">
 
     <h1 class="visually-hidden">Cat energy - лучшее питание для котов.</h1>
+
+    <section class="main-intro">
+      <div class="main-intro__wrapper">
+        <h2 class="main-intro__title">Функциональное питание для котов</h2>
+        <h3 class="main-intro__slogan">Занялся собой? Займись котом!</h3>
+        <img class="main-intro__image" src="img/intro/intro-mobile.png" width="280" height="270" alt="Бокс cat energy.">
+      </div>
+      <div class="main-button">
+        <a class="main-button__form" href="form.html">Подобрать программу</a>
+      </div>
+    </section>
 
     <section class="pets-problems">
       <div class="pets-problems__wrapper">
@@ -108,13 +111,15 @@
           16 часов в день. </p>
         <div class="example__holder illustration">
           <div class="illustration__wrapper">
-            <div class="illustration__counter">
-              <p class="illustration__title">5 кг</p>
-              <p class="illustration__subtitle">снижение веса</p>
-            </div>
-            <div class="illustration__counter">
-              <p class="illustration__title">60 дней</p>
-              <p class="illustration__subtitle">затрачено времени</p>
+            <div class="illustration__counter-wrapper">
+              <div class="illustration__counter">
+                <p class="illustration__title">5 кг</p>
+                <p class="illustration__subtitle">снижение веса</p>
+              </div>
+              <div class="illustration__counter">
+                <p class="illustration__title">60 дней</p>
+                <p class="illustration__subtitle">затрачено времени</p>
+              </div>
             </div>
             <div class="example__result-holder">
               <p class="example__result">Затраты на питание:</p>
