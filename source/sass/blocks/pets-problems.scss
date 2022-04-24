@@ -4,11 +4,13 @@
   padding: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
+    padding: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1400px;
+    width: 1220px;
+    padding: 20px 110px;
   }
 }
 
@@ -29,7 +31,8 @@
   background-color: $background-first;
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 466px;
+    padding: 52px;
   }
 }
 

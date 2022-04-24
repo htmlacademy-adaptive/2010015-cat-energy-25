@@ -1,17 +1,7 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  padding: 20px;
   background-color: $background-white;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
 }
 
 .contacts__title {

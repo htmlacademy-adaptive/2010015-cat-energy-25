@@ -1,8 +1,26 @@
 .program__instruction {
+  margin: 0;
+  margin-bottom: 39px;
   font-size: 14px;
   line-height: 18px;
   font-weight: inherit;
   text-transform: uppercase;
+}
+
+.program__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.program__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.program__item {
+  margin-bottom: 14px;
 }
 
 .program__label {
@@ -13,6 +31,7 @@
 }
 
 .program__control {
+  padding: 0;
   font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
@@ -24,6 +43,11 @@
   }
 }
 
+.program__control--field {
+  border: none;
+  outline: 1px solid $color-border-second;
+}
+
 .program__option {
   color: $color-text-title;
 }
@@ -33,6 +57,8 @@
 }
 
 .program__title {
+  margin-bottom: 35px;
+  padding: 0;
   font-size: 24px;
   line-height: 26px;
 }

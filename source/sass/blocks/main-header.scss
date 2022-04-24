@@ -11,12 +11,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 768px;
+    width: 708px;
+    padding: 42px 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 1220px;
+    padding: 60px 110px;
   }
 }

@@ -1,5 +1,4 @@
 .product-cards {
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
@@ -12,4 +11,5 @@
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 143px;
+  }
 }
