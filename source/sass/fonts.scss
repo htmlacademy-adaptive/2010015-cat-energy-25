@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Arial";
-  src: local('Arial'), url(/fonts/Arial.ttf)
+  src: local('Arial'),
        url("../fonts/Arialregular.woff2") format("woff2"),
        url("../fonts/Arialregular.woff") format("woff");
   font-weight: 400;

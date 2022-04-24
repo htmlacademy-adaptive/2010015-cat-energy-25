@@ -1,3 +1,23 @@
+.main-button {
+  width: 280px;
+  margin: 0 auto;
+  padding: 175px 20px 0;
+  text-align: center;
+  background-color: $background-white;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 30px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    text-align: left;
+    padding: 20px 110px;
+  }
+}
+
 .main-button__form {
   font-size: 14px;
   line-height: 18px;

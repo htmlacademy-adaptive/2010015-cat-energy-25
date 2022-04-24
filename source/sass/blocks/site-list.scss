@@ -1,9 +1,23 @@
+.site-list__item {
+  text-align: center;
+}
+
 .site-list__link {
-  font-family: $main-font-medium;
+  font-family: $main-font;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 15px;
+  }
 }

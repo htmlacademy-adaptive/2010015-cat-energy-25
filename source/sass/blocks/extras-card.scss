@@ -1,8 +1,26 @@
+.extras-card {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+  }
+}
+
 .extras-card__title {
   font-size: 16px;
   line-height: 16px;
   font-weight: inherit;
   text-transform: uppercase;
+}
+
+.extras-card__description-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .extras-card__description {
