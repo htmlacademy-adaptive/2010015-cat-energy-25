@@ -1,7 +1,13 @@
 .extras {
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 895px;
+    padding: 25px 0 38px;
   }
 }
 

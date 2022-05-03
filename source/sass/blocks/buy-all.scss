@@ -1,5 +1,9 @@
 .buy-all {
   background-color: $background-image;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .buy-all__text {
