@@ -7,23 +7,44 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 613px;
   }
 }
 
 .extras-card__title {
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   font-weight: inherit;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extras-card__description-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 112px;
+  }
 }
 
 .extras-card__description {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;

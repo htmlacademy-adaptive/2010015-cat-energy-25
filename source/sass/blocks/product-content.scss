@@ -1,3 +1,13 @@
+.product-content__title {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
 .product-content__link-title {
   font-size: 16px;
   line-height: 20px;
@@ -10,7 +20,8 @@
 .product-content__wrapper {
   display: grid;
   grid-template-columns: 50px 50px;
-  gap: 5px;
+  row-gap: 5px;
+  justify-content: space-between;
 }
 
 .product-content__description {
