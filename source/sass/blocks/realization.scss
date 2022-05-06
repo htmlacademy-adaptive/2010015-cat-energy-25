@@ -1,46 +1,132 @@
 .realization__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 53px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 30px;
+    padding: 15px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 20px 110px;
+    padding: 0 110px 126px;
   }
 }
 
 .realization__title {
   margin: 0;
+  margin-bottom: 42px;
   font-size: 36px;
   line-height: 40px;
   font-weight: inherit;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .realization__list {
   margin: 0;
   padding: 0;
+  padding-left: 80px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 210px 245px;
+    column-gap: 175px;
+    row-gap: 134px;
+    padding: 0;
+    padding-bottom: 104px;
+    border-bottom: 1px solid #e6e6e6;
+    counter-reset: realization;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 201px 227px 209px 245px;
+    column-gap: 0;
     justify-content: space-between;
+    padding: 0;
+    border: none;
+  }
+}
+
+.realization__item {
+  position: relative;
+  margin-bottom: 26px;
+
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -80px;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $background-icon;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/icons/leaf.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--water::before {
+    background-image: url("../../img/icons/water.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--meal::before {
+    background-image: url("../../img/icons/meal.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--time::before {
+    background-image: url("../../img/icons/time.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 101px;
+    counter-increment: realization;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      content: counter(realization);
+      font-size: 280px;
+      line-height: 280px;
+      color: $background-first;
+    }
   }
 }
 
 .realization__description {
+  position: relative;
+  z-index: 1;
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   font-weight: inherit;
   color: $color-text-main;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

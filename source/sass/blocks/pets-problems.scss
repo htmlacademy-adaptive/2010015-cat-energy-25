@@ -1,16 +1,16 @@
 .pets-problems__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 30px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 20px 110px;
+    padding: 82px 110px 71px;
   }
 }
 
@@ -26,35 +26,163 @@
 }
 
 .pets-problems__item {
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 30px 20px 22px;
   background-color: $background-first;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 53px 57px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 466px;
-    padding: 52px;
+    margin: 0;
+    padding: 77px 52px 59px;
   }
 }
 
 .pets-problems__title {
+  position: relative;
   margin: 0;
+  margin-bottom: 29px;
+  padding-left: 69px;
   font-size: 24px;
   line-height: 37px;
   font-weight: inherit;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: $background-icon;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    position: absolute;
+    left: 7px;
+    top: -10px;
+    content: "";
+    width: 36px;
+    height: 50px;
+    background-image: url("../../img/icons/cat-slim.svg");
+  }
+
+  &--pro::after {
+    position: absolute;
+    left: -10px;
+    top: 4px;
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icons/cat-pro.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      top: 12px;
+      left: 400px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      left: 470px;
+      top: 75px;
+    }
+
+    &--pro::after {
+      left: 470px;
+      top: 75px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+
+    &::before {
+      top: -30px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      left: 30px;
+      top: -7px;
+    }
+
+    &--pro::after {
+      left: 17px;
+      top: 3px;
+    }
+  }
 }
 
 .pets-problems__description {
+  margin: 0;
+  padding-bottom: 23px;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: $color-text-main;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin-bottom: 52px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 27px;
+  }
 }
 
 .pets-problems__link {
+  position: relative;
+  display: inline-block;
+  margin-top: 19px;
+  padding-right: 40px;
   font-size: 16px;
   line-height: 16px;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    top: 3px;
+    left: 101px;
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../../img/icons/arrow.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 11px;
+      left: 125px;
+    }
+  }
 }

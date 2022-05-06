@@ -1,3 +1,17 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .copyright__link {
   font-family: $secondary-font;
   font-size: 16px;
