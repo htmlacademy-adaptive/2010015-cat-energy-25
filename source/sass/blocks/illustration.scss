@@ -51,8 +51,8 @@
 
 .illustration__subtitle {
   position: absolute;
-  left: 22px;
-  bottom: -14px;
+  left: 19px;
+  bottom: -15px;
   width: 82px;
   margin: 0;
   font-family: $secondary-font;
@@ -62,14 +62,23 @@
   background-color: $background-second;
 
   @media (min-width: $tablet-width) {
-    bottom: -7px;
+    bottom: -1px;
+    left: 32px;
     width: auto;
     font-size: 14px;
     line-height: 14px;
     background-color: $background-white;
+
+    &--second {
+      left: 17px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    bottom: -5px;
+    left: 6px;
+    min-width: 127px;
+    padding: 0 8px;
     background-color: $background-first;
   }
 }

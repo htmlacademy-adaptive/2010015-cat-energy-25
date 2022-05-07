@@ -3,7 +3,7 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 27px 20px;
   background-color: $background-white;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
+    top: 91px;
     left: 110px;
     width: 405px;
     padding: 60px 80px 56px;
@@ -58,6 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 

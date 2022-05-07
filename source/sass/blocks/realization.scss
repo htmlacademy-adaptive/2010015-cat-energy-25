@@ -1,7 +1,7 @@
 .realization__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px 53px;
+  padding: 0 20px 27px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -16,7 +16,7 @@
 
 .realization__title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   font-size: 36px;
   line-height: 40px;
   font-weight: inherit;
@@ -31,7 +31,7 @@
 .realization__list {
   margin: 0;
   padding: 0;
-  padding-left: 80px;
+  padding-left: 81px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -70,43 +70,45 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/icons/leaf.svg");
+    background-image: url("../img/icons/leaf.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--water::before {
-    background-image: url("../../img/icons/water.svg");
+    background-image: url("../img/icons/water.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--meal::before {
-    background-image: url("../../img/icons/meal.svg");
+    background-image: url("../img/icons/meal.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--time::before {
-    background-image: url("../../img/icons/time.svg");
+    background-image: url("../img/icons/time.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-top: 101px;
+    padding-top: 112px;
     counter-increment: realization;
 
     &::before {
       top: 0;
       left: 0;
+      width: 80px;
+      height: 80px;
     }
 
     &::after {
       position: absolute;
-      top: -50px;
-      right: 0;
+      top: -40px;
+      right: -30px;
       content: counter(realization);
       font-size: 280px;
       line-height: 280px;
