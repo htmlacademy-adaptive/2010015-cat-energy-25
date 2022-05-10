@@ -61,6 +61,10 @@
     &:active {
       opacity: 30%;
     }
+
+    &--inner {
+      color: $color-text-black;
+    }
   }
 }
 
@@ -77,18 +81,26 @@
       height: 2px;
       background-color: $background-button;
     }
+
+    &-inner {
+      position: relative;
+    }
+
+    &-inner::after {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      bottom: -4px;
+      content: "";
+      height: 2px;
+      background-color: $background-icon;
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
     &::after {
-      position: absolute;
-      left: 15px;
-      right: 15px;
-      bottom: -4px;
-      content: "";
-      height: 2px;
       background-color: $background-white;
     }
   }

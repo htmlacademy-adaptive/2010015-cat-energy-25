@@ -1,4 +1,8 @@
 .main-footer {
+  &--inner {
+    background-color: $background-first;
+  }
+
   @media (min-width: $desktop-width) {
     background-color: $background-first;
   }

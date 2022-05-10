@@ -13,3 +13,18 @@
     row-gap: 143px;
   }
 }
+
+.product-cards__item {
+  border-top: 1px solid #ebebeb;
+
+  &:last-child {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      border: none;
+      outline: 2px solid $background-first;
+    }
+  }
+}

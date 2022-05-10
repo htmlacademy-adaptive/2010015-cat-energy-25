@@ -13,10 +13,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    z-index: 4;
+    width: 1060px;
     text-align: left;
     margin-bottom: 0;
-    padding: 0 216px 200px;
+    padding: 0 190px 200px;
     padding-bottom: 188px;
   }
 }

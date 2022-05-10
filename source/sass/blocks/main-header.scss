@@ -2,7 +2,13 @@
   background-color: $background-white;
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 4;
     background: linear-gradient(to right, $background-white 50%, $background-image 50%);
+
+    &--inner {
+      background: none;
+    }
   }
 }
 
@@ -21,6 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     width: 1220px;

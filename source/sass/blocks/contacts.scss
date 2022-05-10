@@ -6,6 +6,10 @@
   padding: 27px 20px;
   background-color: $background-white;
 
+  &--inner {
+    background-color: $background-first;
+  }
+
   @media (min-width: $tablet-width) {
     width: 628px;
     margin: 0 auto;
@@ -18,6 +22,10 @@
     left: 110px;
     width: 405px;
     padding: 60px 80px 56px;
+
+    &--inner {
+      background-color: $background-white;
+    }
   }
 }
 

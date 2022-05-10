@@ -1,15 +1,80 @@
 .buy-all {
-  background-color: $background-image;
+  position: relative;
+  margin: 35px 0;
+  background-image: url("../img/cats/bag-cat.png");
+  background-repeat: no-repeat;
+
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/cats/bag-cat-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/cats/bag-cat.png");
+  }
+
+  &::before {
+    position: absolute;
+    content: url("../img/icons/gift.svg");
+    top: 58px;
+    left: 101px;
+    z-index: 2;
+    width: 78px;
+    height: 80px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: 280px;
+    height: 290px;
+    background-color: $background-image;
+
+    @media (min-width: $tablet-width) {
+      width: 707px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      height: 288px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 68px 0;
+    margin-bottom: 75px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 244px;
+    margin: 0;
+
+    &::before {
+      top: 58px;
+      left: 84px;
+    }
   }
 }
 
 .buy-all__text {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 186px 61px 43px 58px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: inherit;
+  text-align: center;
   color: $color-text-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 124px 69px 422px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 184px 43px 42px 40px;
+  }
 }
