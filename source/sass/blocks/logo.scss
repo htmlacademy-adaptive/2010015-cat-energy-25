@@ -1,14 +1,29 @@
 .logo {
   display: flex;
-  justify-content: space-between;
+  min-height: 65px;
   align-items: center;
-  height: 66px;
+  padding-right: 32px;
+}
 
-  @media (min-width: $tablet-width) {
-    height: 100px;
-  }
+.logo__text {
+  margin: 0 auto;
+}
 
+.logo__image:hover,
+.logo__text:hover {
   @media (min-width: $desktop-width) {
-    height: 140px;
+    opacity: 80%;
   }
+}
+
+.logo__image:active,
+.logo__text:active {
+  @media (min-width: $desktop-width) {
+    opacity: 80%;
+  }
+}
+
+.logo-main__footer {
+  width: 128px;
+  height: 24px;
 }

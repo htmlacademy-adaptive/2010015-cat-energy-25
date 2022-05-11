@@ -1,8 +1,39 @@
 .site-list__item {
   text-align: center;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .site-list__link {
+  display: block;
+  padding: 21px 10px 23px;
   font-family: $main-font;
   font-size: 20px;
   line-height: 20px;
@@ -12,12 +43,65 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 5px;
     font-size: 18px;
     line-height: 24px;
-    padding: 5px 15px;
+    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 5px 15px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-text-white;
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+
+    &--inner {
+      color: $color-text-black;
+    }
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      bottom: -4px;
+      content: "";
+      height: 2px;
+      background-color: $background-button;
+    }
+
+    &-inner {
+      position: relative;
+    }
+
+    &-inner::after {
+      position: absolute;
+      left: 5px;
+      right: 5px;
+      bottom: -4px;
+      content: "";
+      height: 2px;
+      background-color: $background-icon;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::after {
+      background-color: $background-white;
+    }
   }
 }

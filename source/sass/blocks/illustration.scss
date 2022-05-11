@@ -12,17 +12,73 @@
 .illustration__counter-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.illustration__counter {
+  position: relative;
+  width: 124px;
+  padding: 14px 0 17px;
+  text-align: center;
+  outline: 1px solid $color-border-second;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding: 15px 0 20px;
+
+    &:not(:last-child) {
+      margin-right: 42px;
+    }
+  }
 }
 
 .illustration__title {
+  margin: 0;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .illustration__subtitle {
+  position: absolute;
+  left: 19px;
+  bottom: -15px;
+  width: 82px;
+  margin: 0;
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
   color: $color-text-main;
+  background-color: $background-second;
+
+  @media (min-width: $tablet-width) {
+    bottom: -1px;
+    left: 32px;
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $background-white;
+
+    &--second {
+      left: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -5px;
+    left: 6px;
+    min-width: 127px;
+    padding: 0 8px;
+    background-color: $background-first;
+  }
 }

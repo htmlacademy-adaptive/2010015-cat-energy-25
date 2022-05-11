@@ -1,28 +1,54 @@
 .main-button {
+  position: relative;
   width: 280px;
+  padding: 2px 20px 0;
   margin: 0 auto;
-  padding: 175px 20px 0;
   text-align: center;
-  background-color: $background-white;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 30px;
+    width: 621px;
+    margin-bottom: 528px;
+    padding: 0 30px 0 117px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    z-index: 4;
+    width: 1060px;
     text-align: left;
-    padding: 20px 110px;
+    margin-bottom: 0;
+    padding: 0 190px 200px;
+    padding-bottom: 188px;
   }
 }
 
 .main-button__form {
+  display: block;
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 26px;
   color: $color-text-white;
   background-color: $background-button;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 15px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5eaa2f;
+    }
+  }
 }

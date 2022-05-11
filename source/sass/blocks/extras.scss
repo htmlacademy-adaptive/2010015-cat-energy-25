@@ -7,10 +7,14 @@
     display: flex;
     justify-content: space-between;
     width: 895px;
-    padding: 25px 0 38px;
+    padding: 15px 0 16px;
   }
 }
 
 .extras__button {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
