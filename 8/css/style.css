@@ -1225,21 +1225,17 @@
 }
 
 .main-footer__map {
-  width: 320px;
   height: 362px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .main-footer__map {
-    width: 768px;
     height: 400px;
     margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
   .main-footer__map {
-    width: 1440px;
-    height: 400px;
     margin: 0 auto;
   }
 }
@@ -1904,7 +1900,8 @@
   .extras-card {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 26px;
+    align-items: baseline;
+    margin-bottom: 22px;
   }
 }
 @media (min-width: 1440px) {
@@ -1983,11 +1980,15 @@
 }
 @media (min-width: 768px) {
   .buy-all {
+    margin: 68px 0;
+    margin-bottom: 78px;
     background-image: url("../img/cats/bag-cat-tablet.png");
   }
 }
 @media (min-width: 1440px) {
   .buy-all {
+    width: 244px;
+    margin: 0;
     background-image: url("../img/cats/bag-cat.png");
   }
 }
@@ -1999,6 +2000,18 @@
   z-index: 2;
   width: 78px;
   height: 80px;
+}
+@media (min-width: 768px) {
+  .buy-all::before {
+    top: 60px;
+    left: 79px;
+  }
+}
+@media (min-width: 1440px) {
+  .buy-all::before {
+    top: 57px;
+    left: 83px;
+  }
 }
 .buy-all::after {
   position: absolute;
@@ -2020,28 +2033,12 @@
     height: 288px;
   }
 }
-@media (min-width: 768px) {
-  .buy-all {
-    margin: 68px 0;
-    margin-bottom: 75px;
-  }
-}
-@media (min-width: 1440px) {
-  .buy-all {
-    width: 244px;
-    margin: 0;
-  }
-  .buy-all::before {
-    top: 58px;
-    left: 84px;
-  }
-}
 
 .buy-all__text {
   position: relative;
   z-index: 2;
   margin: 0;
-  padding: 186px 61px 43px 58px;
+  padding: 188px 61px 43px 58px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -2051,12 +2048,14 @@
 }
 @media (min-width: 768px) {
   .buy-all__text {
-    padding: 71px 124px 69px 422px;
+    padding: 74px 124px 66px 422px;
+    text-align: left;
   }
 }
 @media (min-width: 1440px) {
   .buy-all__text {
     padding: 184px 43px 42px 40px;
+    text-align: center;
   }
 }
 
