@@ -2,7 +2,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 26px;
+    align-items: baseline;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
