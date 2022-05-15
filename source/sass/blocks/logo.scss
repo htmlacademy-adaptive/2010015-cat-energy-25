@@ -2,11 +2,14 @@
   display: flex;
   min-height: 65px;
   align-items: center;
-  padding-right: 32px;
 }
 
 .logo__text {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .logo__image:hover,

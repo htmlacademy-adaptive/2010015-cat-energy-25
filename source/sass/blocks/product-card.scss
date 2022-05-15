@@ -15,9 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
     padding: 162px 36px 40px 40px;
-    background-color: $background-first;
   }
 }
 
@@ -30,13 +28,30 @@
     position: absolute;
     top: 0;
     left: 100px;
-    display: block;
-    text-align: center;
   }
 
-  @media (min-width: $desktop-width) {
-    display: block;
-    text-align: center;
+  &--small {
+    @media (min-width: $tablet-width) {
+      top: -46px;
+      left: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -52px;
+      left: 43px;
+    }
+  }
+
+  &--large {
+    @media (min-width: $tablet-width) {
+      top: -73px;
+      left: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -80px;
+      left: 39px;
+    }
   }
 }
 

@@ -1,20 +1,34 @@
 .buy-all {
   position: relative;
   margin: 35px 0;
-  background-image: url("../img/cats/bag-cat.png");
+  background-image: url("../img/cats/bag-cat.jpg");
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cats/bag-cat@2x.jpg");
+    background-size: 560px auto;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 68px 0;
     margin-bottom: 78px;
-    background-image: url("../img/cats/bag-cat-tablet.png");
+    background-image: url("../img/cats/bag-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cats/bag-cat-tablet@2x.jpg");
+      background-size: 1414px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 244px;
     margin: 0;
-    background-image: url("../img/cats/bag-cat.png");
+    background-image: url("../img/cats/bag-cat.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cats/bag-cat@2x.jpg");
+      background-size: 488px auto;
+    }
   }
 
   &::before {

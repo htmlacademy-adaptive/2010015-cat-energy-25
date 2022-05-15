@@ -5,8 +5,14 @@
 
   @media (min-width: $tablet-width) {
     width: 574px;
+    margin: 0 auto;
+    margin-top: 31px;
     padding: 0;
-    padding-right: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 578px;
+    margin-top: 0;
   }
 }
 
@@ -64,6 +70,16 @@
       border-radius: 50%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: 193px;
+    }
+
+    &::after {
+      left: 206px;
+    }
+  }
 }
 
 .toggle__button {
@@ -78,5 +94,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted $color-border-second;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 7px;
   }
 }

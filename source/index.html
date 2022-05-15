@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +16,11 @@
     <div class="main-header__wrapper">
       <div class="logo">
         <a class="logo__image" href="#">
-          <img src="img/logo/logo-cat-energy-mobile.svg" width="34" height="38" alt="Cat energy иконка.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg">
+            <img src="img/logo/logo-cat-energy-mobile.svg" alt="Cat energy иконка.">
+          </picture>
         </a>
         <a class="logo__text logo-main" href="#">
           <img src="img/logo/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
@@ -49,7 +56,11 @@
       <div class="main-intro__wrapper">
         <h2 class="main-intro__title">Функциональное питание для котов</h2>
         <h3 class="main-intro__slogan">Занялся собой? Займись котом!</h3>
-        <img class="main-intro__image" src="img/intro/intro-mobile.png" width="280" height="270" alt="Бокс cat energy.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/intro/intro-desktop.png 1x, img/intro/intro-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.png 1x, img/intro/intro-tablet@2x.png 2x">
+          <img class="main-intro__image" src="img/intro/intro-mobile.png" srcset="img/intro/intro-mobile@2x.png 2x" alt="Бокс cat energy.">
+        </picture>
       </div>
       <div class="main-button">
         <a class="main-button__form" href="form.html">Подобрать программу</a>
@@ -124,7 +135,10 @@
             </div>
           </div>
           <div class="example__container">
-            <img class="example__image" src="img/cats/cat-fat-mobile.png" width="280" height="232" alt="Толстый кот.">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cats/double-cat.png 1x, img/cats/double-cat@2x.png 2x">
+              <img class="example__image" src="img/cats/cat-fat-mobile.png" srcset="img/cats/cat-fat-mobile@2x.png 2x" alt="Толстый кот.">
+            </picture>
             <div class="example__toggle toggle">
               <button class="toggle__button">Было</button>
                 <span class="toggle__interactive"></span>
@@ -139,11 +153,13 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
-        <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <div class="contacts__text-wrapper">
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
+      <div class="main-footer__contacts-wrapper">
+        <div class="main-footer__contacts contacts">
+          <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
+          <div class="contacts__text-wrapper">
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="main-footer__map">

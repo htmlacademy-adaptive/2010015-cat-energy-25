@@ -2,10 +2,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin: 0;
   }
 }
 
@@ -62,7 +64,7 @@
   background-color: $background-second;
 
   @media (min-width: $tablet-width) {
-    bottom: -1px;
+    bottom: -7px;
     left: 32px;
     width: auto;
     font-size: 14px;

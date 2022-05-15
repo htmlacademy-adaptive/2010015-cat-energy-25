@@ -2,7 +2,7 @@
   background-color: $background-second;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($background-white 400px, $background-second 400px);
+    background: linear-gradient($background-white 618px, $background-second 618px);
   }
 
 
@@ -20,7 +20,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 43px 30px 60px;
-    background: linear-gradient($background-white 400px, $background-second 400px);
+    background: linear-gradient($background-white 618px, $background-second 618px);
   }
 
   @media (min-width: $desktop-width) {
@@ -103,7 +103,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     font-size: 20px;
     text-align: right;
   }
@@ -128,7 +128,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -230px;
-    right: 25%;
+    bottom: 56px;
+    right: 0;
   }
 }

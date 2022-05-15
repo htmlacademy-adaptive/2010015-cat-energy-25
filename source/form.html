@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,8 +15,12 @@
   <header class="main-header main-header--inner">
     <div class="main-header__wrapper">
       <div class="logo">
-        <a class="logo__image" href="#">
-          <img src="img/logo/logo-cat-energy-mobile.svg" width="34" height="38" alt="Cat energy иконка.">
+        <a class="logo__image" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg" width="174" height="51">
+            <img src="img/logo/logo-cat-energy-mobile.svg" width="34" height="38" alt="Cat energy иконка.">
+          </picture>
         </a>
         <a class="logo__text logo-main" href="#">
           <img src="img/logo/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
@@ -183,11 +190,13 @@
 
   <footer class="main-footer main-footer--inner">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts contacts--inner">
-        <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <div class="contacts__text-wrapper">
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
+      <div class="main-footer__contacts-wrapper">
+        <div class="main-footer__contacts contacts">
+          <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
+          <div class="contacts__text-wrapper">
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="main-footer__map">
