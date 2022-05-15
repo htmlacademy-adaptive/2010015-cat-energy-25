@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,7 +16,11 @@
     <div class="main-header__wrapper">
       <div class="logo">
         <a class="logo__image" href="index.html">
-          <img src="img/logo/logo-cat-energy-mobile.svg" width="34" height="38" alt="Cat energy иконка.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg">
+            <img src="img/logo/logo-cat-energy-mobile.svg" alt="Cat energy иконка.">
+          </picture>
         </a>
         <a class="logo__text logo-main" href="index.html">
           <img src="img/logo/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
@@ -49,9 +56,11 @@
       <ul class="product__list product-cards">
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-chicken-small.png"
-                alt="Бокс c курицей 500 грамм.">
+            <a class="product-card__link-image product-card__link-image--small" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-chicken-small.png 1x, img/product/tablet-desktop/box-chicken-small@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-chicken-small.png" srcset="img/product/mobile/box-chicken-small@2x.png 2x" alt="Бокс c курицей 500 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -73,9 +82,12 @@
         </li>
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-chicken-large.png"
-                alt="Бокс c курицей 1000 грамм.">
+            <a class="product-card__link-image product-card__link-image--large" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/product/tablet-desktop/box-chicken-large.png 1x, img/product/tablet-desktop/box-chicken-large@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-chicken-large.png 1x, img/product/tablet-desktop/box-chicken-large@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-chicken-large.png" srcset="img/product/mobile/box-chicken-large@2x.png 2x" alt="Бокс c курицей 1000 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -98,9 +110,11 @@
         </li>
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-fish-small.png"
-                alt="Бокс c рыбой 500 грамм.">
+            <a class="product-card__link-image product-card__link-image--small" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-fish-small.png 1x, img/product/tablet-desktop/box-fish-small@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-fish-small.png" srcset="img/product/mobile/box-fish-small@2x.png 2x" alt="Бокс c рыбой 500 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -122,9 +136,12 @@
         </li>
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-fish-large.png"
-                alt="Бокс c рыбой 1000 грамм.">
+            <a class="product-card__link-image product-card__link-image--large" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/product/tablet-desktop/box-fish-large.png 1x, img/product/tablet-desktop/box-fish-large@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-fish-large.png 1x, img/product/tablet-desktop/box-fish-large@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-fish-large.png" srcset="img/product/mobile/box-fish-large@2x.png 2x" alt="Бокс c рыбой 1000 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -146,9 +163,11 @@
         </li>
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-buckwheat-small.png"
-                alt="Бокс c гречкой 500 грамм.">
+            <a class="product-card__link-image product-card__link-image--small" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-buckwheat-small.png 1x, img/product/tablet-desktop/box-buckwheat-small@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-buckwheat-small.png" srcset="img/product/mobile/box-buckwheat-small@2x.png 2x" alt="Бокс c гречкой 500 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -170,9 +189,12 @@
         </li>
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-buckwheat-large.png"
-                alt="Бокс c гречкой 1000 грамм.">
+            <a class="product-card__link-image product-card__link-image--large" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/product/tablet-desktop/box-buckwheat-large.png 1x, img/product/tablet-desktop/box-buckwheat-large@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-buckwheat-large.png 1x, img/product/tablet-desktop/box-buckwheat-large@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-buckwheat-large.png" srcset="img/product/mobile/box-buckwheat-large@2x.png 2x" alt="Бокс c гречкой 1000 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -194,9 +216,11 @@
         </li>
         <li class="product-cards__item">
           <div class="product-card">
-            <a class="product-card__link-image" href="#">
-              <img class="product-card__image" src="img/product/mobile/box-rice-small.png"
-                alt="Бокс c рисом 500 грамм.">
+            <a class="product-card__link-image product-card__link-image--small" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/product/tablet-desktop/box-rice-small.png 1x, img/product/tablet-desktop/box-rice-small@2x.png 2x">
+                <img class="product-card__image" src="img/product/mobile/box-rice-small.png" srcset="img/product/mobile/box-rice-small@2x.png 2x" alt="Бокс c рисом 500 грамм.">
+              </picture>
             </a>
             <div class="product-card__content product-content">
               <h2 class="product-content__title">
@@ -303,11 +327,13 @@
 
   <footer class="main-footer main-footer--inner">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts contacts--inner">
-        <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <div class="contacts__text-wrapper">
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
+      <div class="main-footer__contacts-wrapper">
+        <div class="main-footer__contacts contacts">
+          <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
+          <div class="contacts__text-wrapper">
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
       <div class="main-footer__map">
