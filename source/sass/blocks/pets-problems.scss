@@ -188,6 +188,11 @@
     background-image: url("../img/icons/arrow.svg");
   }
 
+  &:hover::after {
+    width: 32px;
+    background-image: url("../img/icons/arrow-long.svg");
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     font-size: 20px;

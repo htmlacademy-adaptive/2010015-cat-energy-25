@@ -14,16 +14,12 @@
 
 .logo__image:hover,
 .logo__text:hover {
-  @media (min-width: $desktop-width) {
-    opacity: 80%;
-  }
+  opacity: 80%;
 }
 
 .logo__image:active,
 .logo__text:active {
-  @media (min-width: $desktop-width) {
-    opacity: 80%;
-  }
+  opacity: 60%;
 }
 
 .logo-main__footer {

@@ -19,4 +19,19 @@
   line-height: 100%;
   color: $color-text-main;
   text-decoration: none;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.copyright__logo {
+  &:hover svg {
+    fill: $background-icon;
+  }
+
+  &:active svg {
+    fill: $background-icon;
+    opacity: 30%;
+  }
 }
