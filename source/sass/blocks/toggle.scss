@@ -57,6 +57,11 @@
       background-color: $background-white;
       outline: 1px solid $color-border-second;
       border-radius: 50%;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    &:active::before {
+      outline: 1px solid $background-button;
     }
 
     &::after {
@@ -95,6 +100,14 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $color-border-second;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   @media (min-width: $desktop-width) {
