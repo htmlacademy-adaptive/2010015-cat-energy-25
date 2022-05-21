@@ -30,7 +30,7 @@ export const styles = () => {
 
 // HTML
 
-const html = () => {
+export const html = () => {
   return gulp.src ('source/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
@@ -117,10 +117,10 @@ const reload = (done) => {
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
