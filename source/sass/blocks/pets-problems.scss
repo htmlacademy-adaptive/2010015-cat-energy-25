@@ -170,6 +170,7 @@
 .pets-problems__link {
   position: relative;
   display: inline-block;
+  max-width: 87px;
   margin-top: 19px;
   padding-right: 40px;
   font-size: 16px;
@@ -194,13 +195,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 108px;
     margin-top: 0;
     font-size: 20px;
     line-height: 30px;
 
     &::after {
-      top: 11px;
-      left: 125px;
+      top: 8px;
+      left: 131px;
     }
   }
 }
