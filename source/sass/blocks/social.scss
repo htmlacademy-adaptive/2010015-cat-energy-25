@@ -26,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-left: 22px;
     border: none;
   }
 
@@ -49,5 +50,10 @@
   &:active svg {
     fill: $background-icon;
     opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: -7px;
   }
 }

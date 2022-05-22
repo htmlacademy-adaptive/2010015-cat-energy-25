@@ -5,10 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Подбор программы</title>
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/js/script.js" as="script">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
   <link rel="icon" href="favicon.ico" />
-  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="img/favicons/apple.png" />
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -17,24 +21,30 @@
       <div class="logo">
         <a class="logo__image" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop.svg" />
-            <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg" />
-            <img src="img/logo/logo-cat-energy-mobile.svg" alt="Cat energy иконка." />
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-cat-energy-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-cat-energy-tablet.svg">
+            <img src="img/logo/logo-cat-energy-mobile.svg" alt="Cat energy иконка.">
           </picture>
         </a>
-        <a class="logo__text logo-main" href="#"><img src="img/logo/logo-cat-energy-text.svg" width="101" height="18"
-            alt="Cat energy." /></a>
+        <a class="logo__text logo-main" href="#">
+          <img src="img/logo/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
+        </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link site-list__link--inner" href="index.html">Главная</a>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--inner" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--inner" href="catalog.html">Каталог
-                продукции</a></li>
-            <li class="site-list__item"><a class="site-list__link site-list__link--inner site-list__link--current-inner"
-                href="#">Подбор программы</a></li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--inner" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--inner site-list__link--current-inner" href="#">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -50,16 +60,13 @@
             <legend class="visually-hidden">Параметры питомца.</legend>
             <ul class="program__list">
               <li class="program__item">
-                <label class="program__label">Имя:* <input class="program__control program__control--field" type="text"
-                    name="name" placeholder="Барсик" required /></label>
+                <label class="program__label">Имя:* <input class="program__control program__control--field" type="text" name="name" placeholder="Барсик" required></label>
               </li>
               <li class="program__item">
-                <label class="program__label">Вес (кг):* <input class="program__control program__control--field"
-                    type="number" name="weight" placeholder="7" required /></label>
+                <label class="program__label">Вес (кг):* <input class="program__control program__control--field" type="number" name="weight" placeholder="7" required></label>
               </li>
               <li class="program__item">
-                <label class="program__label">Возраст (лет): <input class="program__control program__control--field"
-                    type="number" name="age" placeholder="7" /></label>
+                <label class="program__label">Возраст (лет): <input class="program__control program__control--field" type="number" name="age" placeholder="7"></label>
               </li>
             </ul>
           </fieldset>
@@ -70,21 +77,22 @@
             <ul class="program__list">
               <li class="program__item">
                 <label class="program__label program__label--radio">
-                  <input class="visually-hidden program__control" type="radio" name="program-group" value="slim"
-                    checked="checked" /> <span class="program__mark-radio"></span>
+                  <input class="visually-hidden program__control" type="radio" name="program-group" value="slim" checked="checked">
+                  <span class="program__mark-radio"></span>
                   <span class="program__option">Похудение</span>
                 </label>
               </li>
               <li class="program__item">
                 <label class="program__label program__label--radio">
-                  <input class="visually-hidden program__control" type="radio" name="program-group" value="weight" />
-                  <span class="program__mark-radio"></span> <span class="program__option">Набор массы</span>
+                  <input class="visually-hidden program__control" type="radio" name="program-group" value="weight">
+                  <span class="program__mark-radio"></span>
+                  <span class="program__option">Набор массы</span>
                 </label>
               </li>
               <li class="program__item">
                 <label class="program__label program__label--radio">
-                  <input class="visually-hidden program__control" type="radio" name="program-group"
-                    value="your-advice" /> <span class="program__mark-radio"></span>
+                  <input class="visually-hidden program__control" type="radio" name="program-group" value="your-advice">
+                  <span class="program__mark-radio"></span>
                   <span class="program__option">Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
@@ -96,24 +104,21 @@
         <legend class="visually-hidden">Контактные данные (владельца кота).</legend>
         <div class="program__title-wrapper">
           <div class="program__title-holder">
-            <h2 class="program__title program__title--contacts" aria-hidden="true">Контактные данные (владельца кота)
-            </h2>
+            <h2 class="program__title program__title--contacts" aria-hidden="true">Контактные данные (владельца кота)</h2>
           </div>
         </div>
         <ul class="program__list program__list--contacts">
           <li class="program__item">
-            <label class="program__label">
-              E-mail:* <input class="program__control program__control--field" type="email" name="email"
-                placeholder="kuklachev@gmail.com" required />
+            <label class="program__label">E-mail:*
+              <input class="program__control program__control--field" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               <svg class="program__icon" width="19" height="14" fill="none" stroke="#222222">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
             </label>
           </li>
           <li class="program__item">
-            <label class="program__label">
-              Телефон:* <input class="program__control program__control--field" type="tel" name="phone"
-                placeholder="8 (960) 900-60-90" required />
+            <label class="program__label">Телефон:*
+              <input class="program__control program__control--field" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               <svg class="program__icon program__icon--phone" width="20" height="21" fill="#222222">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -128,8 +133,9 @@
             <h2 class="program__title program__title--comment" aria-hidden="true">Комментарий</h2>
           </div>
         </div>
-        <div class="program__control-wrapper"><textarea class="program__control program__control--textarea"
-            name="comment" placeholder="Расскажите обо всех повадках кота"></textarea></div>
+        <div class="program__control-wrapper">
+          <textarea class="program__control program__control--textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
       <fieldset class="program__fieldset">
         <legend class="visually-hidden">Дополнительно.</legend>
@@ -141,26 +147,30 @@
         <ul class="program__list program__list-additionally">
           <li class="program__item program__item--additionally">
             <label class="program__label program__label--checkbox">
-              <input class="visually-hidden program__control" type="checkbox" name="sweetener" checked="checked" />
-              <span class="program__mark-checkbox"></span> <span class="program__text">Сахарозаменитель</span>
+              <input class="visually-hidden program__control" type="checkbox" name="sweetener" checked="checked">
+              <span class="program__mark-checkbox"></span>
+              <span class="program__text">Сахарозаменитель</span>
             </label>
           </li>
           <li class="program__item program__item--additionally">
             <label class="program__label program__label--checkbox">
-              <input class="visually-hidden program__control" type="checkbox" name="water" /> <span
-                class="program__mark-checkbox"></span> <span class="program__text">Питьевая вода</span>
+              <input class="visually-hidden program__control" type="checkbox" name="water">
+              <span class="program__mark-checkbox"></span>
+              <span class="program__text">Питьевая вода</span>
             </label>
           </li>
           <li class="program__item program__item--additionally">
             <label class="program__label program__label--checkbox">
-              <input class="visually-hidden program__control" type="checkbox" name="milk" /> <span
-                class="program__mark-checkbox"></span> <span class="program__text">Молоко</span>
+              <input class="visually-hidden program__control" type="checkbox" name="milk">
+              <span class="program__mark-checkbox"></span>
+              <span class="program__text">Молоко</span>
             </label>
           </li>
           <li class="program__item program__item--additionally">
             <label class="program__label program__label--checkbox">
-              <input class="visually-hidden program__control" type="checkbox" name="vitamins" /> <span
-                class="program__mark-checkbox"></span> <span class="program__text">Витамины</span>
+              <input class="visually-hidden program__control" type="checkbox" name="vitamins">
+              <span class="program__mark-checkbox"></span>
+              <span class="program__text">Витамины</span>
             </label>
           </li>
         </ul>
@@ -175,10 +185,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts-wrapper">
         <div class="main-footer__contacts contacts">
-          <b class="contacts__title">
-            Приглашаем<br />
-            к сотрудничеству дилеров!
-          </b>
+          <b class="contacts__title">Приглашаем<br/>к сотрудничеству дилеров!</b>
           <div class="contacts__text-wrapper">
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
             <p class="contacts__text contacts__text-city">Санкт-Петербург</p>
@@ -186,35 +193,36 @@
         </div>
       </div>
       <div class="main-footer__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871606279!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1652155893588!5m2!1sru!2sru"
-          width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871606279!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1652155893588!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="main-footer__social-wrapper">
         <div class="main-footer__social social">
-          <a class="main-footer__logo logo-main" href="#"><img class="logo-main__footer"
-              src="img/logo/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy." /></a>
+          <a class="main-footer__logo logo-main" href="#">
+            <img class="logo-main__footer" src="img/logo/logo-cat-energy-text.svg" width="101" height="18" alt="Cat energy.">
+          </a>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg width="27" height="17" fill="#666666">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg> <span class="visually-hidden">Вконтакте.</span>
+                </svg>
+                <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <svg width="24" height="19" fill="#666666">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
-                </svg> <span class="visually-hidden">Ютуб.</span>
+                </svg>
+                <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <svg width="20" height="18" fill="#666666">
                   <use xlink:href="img/sprite.svg#icon-telegram"></use>
-                </svg> <span class="visually-hidden">Телеграм.</span>
+                </svg>
+                <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
           </ul>
@@ -223,7 +231,8 @@
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34" fill="#666666">
                 <use xlink:href="img/sprite.svg#icon-academy"></use>
-              </svg> <span class="visually-hidden">HTML Academy.</span>
+              </svg>
+              <span class="visually-hidden">HTML Academy.</span>
             </a>
           </div>
         </div>
