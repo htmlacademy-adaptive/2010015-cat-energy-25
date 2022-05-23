@@ -196,7 +196,6 @@
 }
 
 .program__control {
-  position: relative;
   padding: 13px 15px;
   font-family: $main-font;
   font-size: 16px;
@@ -339,6 +338,10 @@
   outline: 1px solid #bababa;
 }
 
+.program__control:focus + .program__mark-radio {
+  outline: auto;
+}
+
 .program__control:disabled + .program__mark-radio {
   outline: 1px solid #bababa;
   opacity: 30%;
@@ -359,6 +362,10 @@
 
 .program__control:hover + .program__mark-checkbox {
   outline: 1px solid #bababa;
+}
+
+.program__control:focus + .program__mark-checkbox {
+  outline: auto;
 }
 
 .program__control:disabled + .program__mark-checkbox {

@@ -36,6 +36,7 @@
   line-height: 20px;
   font-weight: inherit;
   text-transform: uppercase;
+  color: $color-text-secondary;
 
   @media (min-width: $tablet-width) {
     width: 171px;

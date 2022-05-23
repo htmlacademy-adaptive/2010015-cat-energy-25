@@ -2,10 +2,15 @@
   display: flex;
   min-height: 65px;
   align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 20px;
+  }
 }
 
 .logo__text {
   margin: 0 auto;
+  padding-right: 33px;
 
   @media (min-width: $tablet-width) {
     display: none;

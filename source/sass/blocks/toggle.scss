@@ -93,6 +93,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  background-color: $background-second;
   border: none;
   cursor: pointer;
 
@@ -112,5 +113,6 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 7px;
+    background-color: $background-first;
   }
 }
